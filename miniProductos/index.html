@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Productos</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <h2>Bienvenido a la tienda</h2>
+      <div id="card">
+        <template id="card-template">
+          <div class="card">
+            <h2 class="title"></h2>
+            <p class="desc"></p>
+          </div>
+        </template>
+
+        <div id="contenedor"></div>
+        <h2>Web component</h2>
+        <product-card titulo="rasberry" descripcion="4GB RAM"></product-card>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="./js/script.js"></script>
+    <script src="./components/card/card.js"></script>
+  </body>
+</html>
