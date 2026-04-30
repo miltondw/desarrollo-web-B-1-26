@@ -30,7 +30,7 @@
             />
           </div>
           <div class="col-md-3 d-flex align-items-end">
-            <button type="submit" class="btn btn-success btn-lg w-100" style="border-radius: 10px; background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); border: none; color: white;">
+            <button type="submit" class="btn btn-success btn-lg w-100" style="border-radius: 10px; background: linear-gradient(135deg, #84fab0 0%, #008380+ 100%); border: none; color: white;">
               <i class="bi bi-plus-circle-fill"></i> Agregar
             </button>
           </div>
@@ -58,7 +58,7 @@
               <td style="padding: 1rem; font-weight: 500; color: #212529;">{{ p.nombre }}</td>
               <td style="padding: 1rem; color: #198754; font-weight: 600;">${{ p.precio.toFixed(2) }}</td>
               <td style="padding: 1rem; text-align: center;">
-                <button class="btn btn-sm btn-warning me-2" @click="abrirEdicion(p)" style="border-radius: 8px;">
+                <button class="btn btn-sm  me-2" @click="abrirEdicion(p)" style="border-radius: 8px;">
                   <i class="bi bi-pencil-square"></i> Editar
                 </button>
                 <button class="btn btn-sm btn-danger" @click="confirmarEliminacion(p)" style="border-radius: 8px;">
@@ -96,7 +96,7 @@
               <i class="bi bi-x-circle"></i> Cancelar
             </button>
             <button type="button" class="btn btn-primary" @click="actualizarProducto" style="border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
-              <i class="bi bi-check-circle-fill"></i> Guardar Cambios
+              <i class="bi bi-check-circle-fill"></i> Guardar Producto
             </button>
           </div>
         </div>

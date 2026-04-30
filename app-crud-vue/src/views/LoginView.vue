@@ -48,9 +48,6 @@
             </button>
           </form>
 
-          <div class="text-center mt-4">
-            <small class="text-muted">Usa: admin / admin</small>
-          </div>
         </div>
       </div>
     </div>
@@ -74,7 +71,9 @@ export default {
         const url = new URL('../assets/usuarios.json', import.meta.url)
         const res = await fetch(url)
         const usuarios = await res.json()
+
         const encontrado = usuarios.find(u => u.username === this.username && u.password === this.password)
+
         if (encontrado) {
           localStorage.setItem('user', JSON.stringify({ username: encontrado.username }))
           this.$router.push('/dashboard')

@@ -3,7 +3,7 @@
     <div class="bg-white shadow-sm p-3 rounded-3 mb-4" style="border-top: 4px solid #667eea;">
       <div class="d-flex justify-content-between align-items-center">
         <div>
-          <h2 class="mb-1 fw-bold text-primary"><i class="bi bi-speedometer2"></i> Dashboard</h2>
+          <h2 class="mb-1 fw-bold text-primary"><i class="bi bi-speedometer2"></i>Panel de control</h2>
           <p class="text-muted mb-0">Bienvenido, <strong>{{ usuarioActual }}</strong></p>
         </div>
         <button class="btn btn-danger" @click="cerrarSesion">
