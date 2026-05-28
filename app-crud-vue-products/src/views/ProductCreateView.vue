@@ -1,5 +1,4 @@
 <template>
-  <!-- Barra superior -->
     <SidebarComponent />
   <div class="flex-grow-1 p-4 bg-light">
     <h3>Crear producto</h3>

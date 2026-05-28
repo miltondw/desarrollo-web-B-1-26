@@ -8,7 +8,7 @@
     <div class="mb-3 row">
       <div class="col">
         <label class="form-label">Precio</label>
-        <input v-model.number="local.price" type="number" step="0.01" min="0" required class="form-control" />
+        <input v-model.number="local.price" type="number" step="50" min="0" required class="form-control" />
       </div>
       <div class="col">
         <label class="form-label">Categoría</label>
@@ -70,7 +70,6 @@ export default {
     watch(() => props.product, resetFromProps, { immediate: true })
 
     function onSubmit() {
-      // validaciones adicionales si se requieren
       emit('submit', { ...local })
     }
 
